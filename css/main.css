@@ -17,8 +17,7 @@ img {
   background-blend-mode: luminosity;
 }
 
-.overlay,
-.sold {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
