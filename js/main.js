@@ -52,7 +52,7 @@ closePopup.forEach((btn) => btn.addEventListener("click", togglePopup));
 overlay.addEventListener("click", togglePopup);
 
 // MARK SOLD BOOKS
-const soldBooks = [6, 7, 14, 22, 26, 28, 30, 32, 34, 40, 41, 47, 49, 67, 84];
+const soldBooks = [5, 6, 7, 14, 22, 26, 28, 30, 32, 34, 40, 41, 47, 49, 67, 84];
 
 function fadeOutABook(id) {
   const book = document.getElementById(id);
