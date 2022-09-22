@@ -39,7 +39,7 @@ export function fillContent(i, index) {
 	<h3 class="card__author">${i.author}</h3>
 	<p class="card__condition">Состояние: ${i.condition}</p>
 	<p class="card__price">${i.price} Р</p>
-  <a class="button button-primary button--description" href="#">Посмотреть описание</a>
+  <a class="button button-primary button--description" href="#">Описание</a>
 </div>
 	`;
   card.innerHTML = innerCardHTML;
