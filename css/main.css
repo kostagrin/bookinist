@@ -139,7 +139,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
-  font-size: 3rem;
+  font-size: 2rem;
   content: 'ПРОДАНО';
   color: brown;
   padding: 5px 7px;
