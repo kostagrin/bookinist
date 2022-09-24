@@ -403,16 +403,132 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  .row {
+    margin-bottom: 0 !important;
+  }
+
+  header {
+    margin-bottom: 10rem;
+  }
+
+  .card {
+    height: 63rem;
+    margin-bottom: 5rem;
+    padding: 0 2rem;
+  }
+
+  .card__img-container {
+    height: 39rem;
+  }
+
+  .card__img-container img {
+    width: 85%;
+  }
+
+  .button--description {
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    height: 90vh;
+    overflow-y: auto;
+  }
+
+  .stamp {
+    font-size: 3rem;
+  }
+
+  .pop-up {
+    width: 96%;
+  }
+
+  .pop-up__left {
+    display: none;
+  }
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+  .three.columns {
+    width: 45%;
+  }
+
+  .card {
+    height: 55rem;
+  }
+
+  .card__img-container {
+    height: 22rem;
+  }
+
+  .card__img-container img {
+    width: 90%;
+  }
+
+  .stamp {
+    font-size: 2.5rem;
+  }
+
+  .pop-up {
+    height: 90vh;
+    overflow: auto;
+  }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+  .card {
+    height: 65rem;
+  }
+
+  .card__img-container {
+    height: 32rem;
+  }
+
+  .pop-up {
+    width: 93%;
+  }
+
+  .pop-up__left {
+    display: block;
+  }
+}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+  .three.columns {
+    width: 22%;
+  }
+
+  .card {
+    height: 53rem;
+  }
+
+  .card__img-container {
+    height: 20rem;
+  }
+
+  .stamp {
+    font-size: 2rem;
+  }
+
+  .pop-up {
+    width: 86%;
+  }
+}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  .card {
+    height: 60rem;
+  }
+
+  .stamp {
+    font-size: 3rem;
+  }
+
+  .pop-up {
+    width: 80%;
+  }
+}
