@@ -521,7 +521,11 @@ there.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
   .card {
-    height: 60rem;
+    height: 57rem;
+  }
+
+  .card__img-container {
+    height: 26rem;
   }
 
   .stamp {
