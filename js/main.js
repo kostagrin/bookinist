@@ -29,13 +29,16 @@ function showDescription(e) {
   const card = e.target.closest(".card");
   const cardID = card.id;
   const textBody = document.querySelector(".description");
+  const pagesBody = document.querySelector(".pages");
   const bookName = card.querySelector(".card__name").innerText;
   const image = document.querySelector(".desc-img");
   const obj = bookList.find((el) => el.id == cardID);
   const description = obj.description;
+  const numberOfPages = obj.pages;
   togglePopup();
 
   textBody.innerText = description;
+  pagesBody.insertAdjacentText('afterbegin', numberOfPages);
   image.setAttribute("src", `/images/${cardID}.jpg`);
   image.setAttribute("alt", bookName);
 }
@@ -52,7 +55,10 @@ closePopup.forEach((btn) => btn.addEventListener("click", togglePopup));
 overlay.addEventListener("click", togglePopup);
 
 // MARK SOLD BOOKS
-const soldBooks = [1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 20,  22, 26, 28, 30, 32, 34, 39, 40, 41, 47, 49, 51, 58, 60, 67, 84];
+const soldBooks = [
+  1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 20, 22, 26, 28, 30, 32, 34, 39, 40, 41,
+  47, 49, 51, 58, 60, 67, 84,
+];
 
 function fadeOutABook(id) {
   const book = document.getElementById(id);
