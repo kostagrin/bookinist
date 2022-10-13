@@ -38,7 +38,7 @@ function showDescription(e) {
   togglePopup();
 
   textBody.innerText = description;
-  pagesBody.insertAdjacentText('afterbegin', numberOfPages);
+  pagesBody.insertAdjacentText("afterbegin", numberOfPages);
   image.setAttribute("src", `/images/${cardID}.jpg`);
   image.setAttribute("alt", bookName);
 }
@@ -56,8 +56,8 @@ overlay.addEventListener("click", togglePopup);
 
 // MARK SOLD BOOKS
 const soldBooks = [
-  1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 20, 22, 26, 28, 30, 32, 34, 39, 40, 41,
-  47, 49, 51, 58, 60, 67, 84,
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 20, 22, 25, 26, 28, 30,
+  32, 34, 38, 39, 40, 41, 47, 49, 51, 58, 60, 65, 67, 84, 93,
 ];
 
 function fadeOutABook(id) {
